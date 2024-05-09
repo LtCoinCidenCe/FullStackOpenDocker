@@ -1,0 +1,95 @@
+Script started on 2024-05-03 23:48:02+08:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="30"]
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [7mdocker container run [27m[7m-[27m[7mit ubuntu bash[27m[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ docker container run -it ubuntu bash[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. container run [1@-[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[Ce container run[1@ [A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[C[Cx container ru[1@n[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[C[C[Ce container r[1@u[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[C[C[C[C
+
+[?2004l[6n[m]0;C:\Program Files\Docker\Docker\resources\bin\docker.exe[?25hUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[25l[7;1H49b384cc7b4a: Pulling fs layer[K
+[?25h[25l[7;1H[?25h49b384cc7b4a: Downloading [>                                                  ]  294.1kB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [==>                                                ]  1.482MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [====>                                              ]  2.662MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [======>                                            ]  3.841MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [=========>                                         ]  5.312MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [===========>                                       ]  6.508MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [=============>                                     ]  7.994MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [===============>                                   ]  9.173MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [=================>                                 ]  10.35MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [====================>                              ]  11.82MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [======================>                            ]     13MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [=========================>                         ]  14.48MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [===========================>                       ]  15.96MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [=============================>                     ]  17.14MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [================================>                  ]  18.61MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [==================================>                ]  19.81MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [====================================>              ]  20.99MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [======================================>            ]  22.18MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [========================================>          ]  23.36MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [===========================================>       ]  24.84MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [=============================================>     ]  26.02MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Downloading [===============================================>   ]  27.49MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Download complete[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [>                                                  ]  294.9kB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [=======>                                           ]  4.424MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [=============>                                     ]  7.963MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [=================>                                 ]  10.03MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [==========================>                        ]  15.34MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [====================================>              ]  20.94MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [==========================================>        ]  24.48MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [==========================================>        ]  24.77MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Extracting [==============================================>    ]  27.13MB/28.87MB[K
+[25l[7;1H[K[?25h49b384cc7b4a: Extracting [=================================================> ]  28.61MB/28.87MB
+[25l[7;1H[?25h49b384cc7b4a: Extracting [==================================================>]  28.87MB/28.87MB[K
+[25l[7;1H[?25h49b384cc7b4a: Pull complete[K
+Digest: sha256:3f85b7caad41a95462cf5b787d8a04604c8262cdcdf9a472b8c52ef83375fe15
+Status: Downloaded newer image for ubuntu:latest[31X
+[?2004hroot@947b65ab524a:/# ]0;root@947b65ab524a: /ll[?2004l
+total 56[54X
+drwxr-xr-x   1 root root 4096 May  3 15:48 [1m[94m.[m/[17X
+drwxr-xr-x   1 root root 4096 May  3 15:48 [1m[94m..[m/[16X
+-rwxr-xr-x   1 root root    0 May  3 15:48 [1m[92m.dockerenv[m*        
+lrwxrwxrwx   1 root root    7 Apr 22 13:08 [1m[96mbin[m -> [1m[94musr/bin[m/    
+drwxr-xr-x   2 root root 4096 Apr 22 13:08 [1m[94mboot[m/[14X
+drwxr-xr-x   5 root root  360 May  3 15:48 [1m[94mdev[m/[15X
+drwxr-xr-x   1 root root 4096 May  3 15:48 [1m[94metc[m/[15X
+drwxr-xr-x   3 root root 4096 Apr 29 14:05 [1m[94mhome[m/[14X
+lrwxrwxrwx   1 root root    7 Apr 22 13:08 [1m[96mlib[m -> [1m[94musr/lib[m/    
+lrwxrwxrwx   1 root root    9 Apr 22 13:08 [1m[96mlib64[m -> [1m[94musr/lib64[m/
+drwxr-xr-x   2 root root 4096 Apr 29 14:02 [1m[94mmedia[m/[13X
+drwxr-xr-x   2 root root 4096 Apr 29 14:02 [1m[94mmnt[m/[15X
+drwxr-xr-x   2 root root 4096 Apr 29 14:02 [1m[94mopt[m/[15X
+dr-xr-xr-x 322 root root    0 May  3 15:48 [1m[94mproc[m/[14X
+drwx------   2 root root 4096 Apr 29 14:05 [1m[94mroot[m/[14X
+drwxr-xr-x   4 root root 4096 Apr 29 14:05 [1m[94mrun[m/[15X
+lrwxrwxrwx   1 root root    8 Apr 22 13:08 [1m[96msbin[m -> [1m[94musr/sbin[m/  
+drwxr-xr-x   2 root root 4096 Apr 29 14:02 [1m[94msrv[m/[15X
+dr-xr-xr-x  11 root root    0 May  3 15:48 [1m[94msys[m/[15X
+drwxrwxrwt   2 root root 4096 Apr 29 14:05 [30m[42mtmp[m/[K
+drwxr-xr-x  12 root root 4096 Apr 29 14:02 [1m[94musr[m/[K
+drwxr-xr-x  11 root root 4096 Apr 29 14:05 [1m[94mvar[m/[K[?2004h
+root@947b65ab524a:/#[1Cclear     cd /usr[?2004l[?2004h
+root@947b65ab524a:/usr#[1C]0;root@947b65ab524a: /usrll  ls[?2004l
+[1m[94mbin[m  [1m[94mgames[m  [1m[94minclude[m  [1m[94mlib[m  [1m[94mlib64[m  [1m[94mlibexec[m  [1m[94mlocal[m  [1m[94msbin[m  [1m[94mshare[m  [1m[94msrc[?2004h[m
+root@947b65ab524a:/usr#[1Cc cd src[?2004l[?2004h
+root@947b65ab524a:/usr/src#[1C]0;root@947b65ab524a: /usr/srcll[?2004l
+total 8
+drwxr-xr-x  2 root root 4096 Apr 22 13:08 [1m[94m.[m/[K
+drwxr-xr-x 12 root root 4096 Apr 29 14:02 [1m[94m..[m/[K[?2004h
+root@947b65ab524a:/usr/src#[1Cmkdir app[?2004l
+[?2004hroot@947b65ab524a:/usr/src# ll[?2004l
+total 16
+drwxr-xr-x 1 root root 4096 May  3 15:48 [1m[94m.[m/[K
+drwxr-xr-x 1 root root 4096 Apr 29 14:02 [1m[94m..[m/[K
+drwxr-xr-x 2 root root 4096 May  3 15:48 [1m[94mapp[m/[K[?2004h
+root@947b65ab524a:/usr/src#[1Ccd app[?2004l[?2004h
+root@947b65ab524a:/usr/src/app#[1C]0;root@947b65ab524a: /usr/src/apptouch index.js[?2004l
+[?2004hroot@947b65ab524a:/usr/src/app# ll[?2004l
+total 8
+drwxr-xr-x 2 root root 4096 May  3 15:49 [1m[94m.[m/[K
+drwxr-xr-x 1 root root 4096 May  3 15:48 [1m[94m..[m/[K
+-rw-r--r-- 1 root root    0 May  3 15:49 index.js[?2004h
+root@947b65ab524a:/usr/src/app#[1Cexit[?2004l
+exit
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ exit
+[?2004lexit
+
+Script done on 2024-05-03 23:49:19+08:00 [COMMAND_EXIT_CODE="0"]

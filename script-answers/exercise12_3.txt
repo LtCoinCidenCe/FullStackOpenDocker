@@ -1,0 +1,966 @@
+Script started on 2024-05-04 00:21:15+08:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="30"]
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ ll
+[?2004ltotal 12
+drwxrwxrwx 1 ccc ccc 4096 May  4 00:21 [0m[34;42m.[0m/
+drwxrwxrwx 1 ccc ccc 4096 May  3 23:32 [34;42m..[0m/
+-rwxrwxrwx 1 ccc ccc    0 Mar 21 18:13 [01;32m.gitkeep[0m*
+-rwxrwxrwx 1 ccc ccc  169 May  4 00:12 [01;32mexercise12_1.txt[0m*
+-rwxrwxrwx 1 ccc ccc 9838 May  3 23:49 [01;32mexercise12_2.txt[0m*
+-rwxrwxrwx 1 ccc ccc    0 May  4 00:21 [01;32mtypescript[0m*
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ docker.exe start -i j olly_mirzakhani
+[?2004l[6n[m]0;C:\Program Files\Docker\Docker\resources\bin\docker.exe[?25h[?2004hroot@947b65ab524a:/# ]0;root@947b65ab524a: /[?2004l[?2004h
+root@947b65ab524a:/# apt  update[?2004l
+[33m0% [Working][m[33m0% [Waiting for headers] [Waiting for headers][mHit:1 http://security.ubuntu.com/ubuntu noble-security InRelease[25l
+[33m0% [Waiting for headers][m[22C[K[30;25H[?25h[33m0% [Waiting for headers][mHit:2 http://archive.ubuntu.com/ubuntu noble InRelease[25l
+[33m0% [Working][m[12C[K[30;13H[?25h[33m0% [Waiting for headers][m[33m0% [Waiting for headers][mHit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease[25l
+[33m0% [Working][m[12C[K[30;13H[?25h[33m0% [Waiting for headers][mHit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease[25l
+[33m0% [Working][m[12C[K[30;13H[?25h[13XReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 97%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.[?2004h
+root@947b65ab524a:/#[1Capt  install vim[?2004l
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 97%Reading package lists... 98%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... Done
+vim is already the newest version (2:9.1.0016-1ubuntu7).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[?2004hroot@947b65ab524a:/# ll[?2004l
+total 68
+drwxr-xr-x   1 root root 4096 May  4 00:13 [1m[94m.[m/[K
+drwxr-xr-x   1 root root 4096 May  4 00:13 [1m[94m..[m/[K
+-rwxr-xr-x   1 root root    0 May  3 23:48 [1m[92m.dockerenv[m*[K
+lrwxrwxrwx   1 root root    7 Apr 22 21:08 [1m[96mbin[m -> [1m[94musr/bin[m/[K
+drwxr-xr-x   2 root root 4096 Apr 22 21:08 [1m[94mboot[m/[K
+drwxr-xr-x   5 root root  360 May  4 00:21 [1m[94mdev[m/[K
+drwxr-xr-x   1 root root 4096 May  4 00:12 [1m[94metc[m/[K
+drwxr-xr-x   3 root root 4096 Apr 29 22:05 [1m[94mhome[m/[K
+lrwxrwxrwx   1 root root    7 Apr 22 21:08 [1m[96mlib[m -> [1m[94musr/lib[m/[K
+lrwxrwxrwx   1 root root    9 Apr 22 21:08 [1m[96mlib64[m -> [1m[94musr/lib64[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94mmedia[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94mmnt[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94mopt[m/[K
+dr-xr-xr-x 317 root root    0 May  4 00:21 [1m[94mproc[m/[K
+drwx------   1 root root 4096 May  3 23:49 [1m[94mroot[m/[K
+drwxr-xr-x   4 root root 4096 Apr 29 22:05 [1m[94mrun[m/[K
+lrwxrwxrwx   1 root root    8 Apr 22 21:08 [1m[96msbin[m -> [1m[94musr/sbin[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94msrv[m/[K
+dr-xr-xr-x  11 root root    0 May  3 23:48 [1m[94msys[m/[K
+drwxrwxrwt   1 root root 4096 May  4 00:21 [30m[42mtmp[m/[K
+drwxr-xr-x   1 root root 4096 Apr 29 22:02 [1m[94musr[m/[K
+drwxr-xr-x   1 root root 4096 Apr 29 22:05 [1m[94mvar[m/[K[?2004h
+root@947b65ab524a:/#[1Ccd /rse   usr/src/app/index      [?2004l[?2004h
+root@947b65ab524a:/usr/src/app#[1C]0;root@947b65ab524a: /usr/src/appll[?2004l
+total 8
+drwxr-xr-x 2 root root 4096 May  3 23:49 [1m[94m.[m/[K
+drwxr-xr-x 1 root root 4096 May  3 23:48 [1m[94m..[m/[K
+-rw-r--r-- 1 root root    0 May  3 23:49 index.js[?2004h
+root@947b65ab524a:/usr/src/app#[1Cvim index.js [?2004l
+[25l[22;0;0t[>4;2m[?2004h[?1004h[22;2t[22;1t[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[H[?25h[25l[0%m[>c]10;?]11;?[?4m[K[1m[94m
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K[m
+"index.js" 0L, 0B                                                                                     0,0-1         All [H[?25h[25l[30;93H1c[H[?25h[25l[30;95Ha[H[?25h[25l[30;93H    [H[?25h[25l[30;93HO[2;1H[K[1m[94m
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K[97m
+-- INSERT --[m                                                                                          1,1           Top [H[?25h[25l[30;1H                                                                                            ^[[K[26C[30;93H          1,0-1         All[H[?25h[25l[30;93Hd[H[?25h[25l[30;94Hd[30;93H  [H[K[1m[94m
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K[m
+                                                                                                      1,0-1         All [H[?25h[25l[30;93Hd[H[?25h[25l[30;94Hd--No lines in buffer--                                                                                0,0-1         All [H[?25h[25l[1m[97m[30;1H-- INSERT --[m                                                                                          0,1           All [H[?25h[25lc[104X[1m[94m
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X
+~[104X[97m
+-- INSERT --[m                                                                                          1,2[1;2H[?25h[25lo[103X[1m[94m[2;2H[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X
+[104X[97m
+- INSERT --[m                                                                                          1,3[1;3H[?25h[25ln[102X[1m[94m[2;3H[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X
+[103X[97m
+ INSERT --[m                                                                                          1,4[1;4H[?25h[25ls[101X[1m[94m[2;4H[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X
+[102X[97m
+INSERT --[m                                                                                          1,5[1;5H[?25h[25lo[100X[1m[94m[2;5H[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X
+[101X[97m
+NSERT --[m                                                                                          1,6[1;6H[?25h[25ll[99X[1m[94m[2;6H[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X
+[100X[97m
+SERT --[m                                                                                          1,7[1;7H[?25h[25le[98X[1m[94m[2;7H[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X
+[99X[97m
+ERT --[m                                                                                          1,8[1;8H[?25h[25l.[97X[1m[94m[2;8H[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X[97m
+RT --[m                                                                                          1,9[1;9H[?25h[25ll[97X[1m[94m[2;9H[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X
+[98X[97m
+T --[m                                                                                          1,10[1;10H[?25h[25lo[96X[1m[94m[2;10H[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X
+[97X[97m
+ --[m                                                                                          1,11[1;11H[?25h[25lg[95X[1m[94m[2;11H[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X
+[96X[97m
+--[m                                                                                          1,12[1;12H[?25h[25l([94X[1m[94m[2;12H[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X[97m
+-[m                                                                                          1,13[1;13H[?25h[25l[31m'[m[93X[1m[94m[2;13H[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X
+[94X[m
+                                                                                          1,14[1;14H[?25h[25l[31mH[m[92X[1m[94m[2;14H[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X
+[93X[m
+                                                                                         1,15[1;15H[?25h[25l[31me[m[91X[1m[94m[2;15H[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X
+[92X[m
+                                                                                        1,16[1;16H[?25h[25l[31ml[m[90X[1m[94m[2;16H[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X
+[91X[m
+                                                                                       1,17[1;17H[?25h[25l[31ml[m[89X[1m[94m[2;17H[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X
+[90X[m
+                                                                                      1,18[1;18H[?25h[25l[31mo[m[88X[1m[94m[2;18H[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X
+[89X[m
+                                                                                     1,19[1;19H[?25h[25l[31m [m[87X[1m[94m[2;19H[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X
+[88X[m
+                                                                                    1,20[1;20H[?25h[25l[31mW[m[86X[1m[94m[2;20H[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X
+[87X[m
+                                                                                   1,21[1;21H[?25h[25l[31mo[m[85X[1m[94m[2;21H[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X
+[86X[m
+                                                                                  1,22[1;22H[?25h[25l[31mr[m[84X[1m[94m[2;22H[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X
+[85X[m
+                                                                                 1,23[1;23H[?25h[25l[31ml[m[83X[1m[94m[2;23H[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X
+[84X[m
+                                                                                1,24[1;24H[?25h[25l[31md[m[82X[1m[94m[2;24H[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X
+[83X[m
+                                                                               1,25[1;25H[?25h[25l[31m'[m[81X[1m[94m[2;25H[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X
+[82X[m
+                                                                              1,26[1;26H[?25h[25l[46m[1;12H([31m[49m'Hello World'[39m[46m)[m[80X[1m[94m[2;12H[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X
+[95X[97m
+-[m                                                                                          1,27[1;27H[?25h[25l[Hconsole.log([31m'Hello World'[m)[K
+[K[1m[94m
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K[97m
+-- INSERT --[m                                                                                          2,1           All [2;1H[?25h[25l[30;1H                                                                                            ^[[K[26C[30;93H          2,0-1         All[2;1H[?25h[25l[30;1H:[K[?25hwq[?2004l[>4;m"index.js"[?25l[23;2t[23;1t 2L, 28B written[?1004l[?2004l[23;0;0t[>4;m[?2004h
+[Hdrwxr-xr-x   1 root root 4096 May  4 00:13 [1m[94m.[m/[K
+drwxr-xr-x   1 root root 4096 May  4 00:13 [1m[94m..[m/[K
+-rwxr-xr-x   1 root root    0 May  3 23:48 [1m[92m.dockerenv[m*[K
+lrwxrwxrwx   1 root root    7 Apr 22 21:08 [1m[96mbin[m -> [1m[94musr/bin[m/[K
+drwxr-xr-x   2 root root 4096 Apr 22 21:08 [1m[94mboot[m/[K
+drwxr-xr-x   5 root root  360 May  4 00:21 [1m[94mdev[m/[K
+drwxr-xr-x   1 root root 4096 May  4 00:12 [1m[94metc[m/[K
+drwxr-xr-x   3 root root 4096 Apr 29 22:05 [1m[94mhome[m/[K
+lrwxrwxrwx   1 root root    7 Apr 22 21:08 [1m[96mlib[m -> [1m[94musr/lib[m/[K
+lrwxrwxrwx   1 root root    9 Apr 22 21:08 [1m[96mlib64[m -> [1m[94musr/lib64[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94mmedia[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94mmnt[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94mopt[m/[K
+dr-xr-xr-x 317 root root    0 May  4 00:21 [1m[94mproc[m/[K
+drwx------   1 root root 4096 May  3 23:49 [1m[94mroot[m/[K
+drwxr-xr-x   4 root root 4096 Apr 29 22:05 [1m[94mrun[m/[K
+lrwxrwxrwx   1 root root    8 Apr 22 21:08 [1m[96msbin[m -> [1m[94musr/sbin[m/[K
+drwxr-xr-x   2 root root 4096 Apr 29 22:02 [1m[94msrv[m/[K
+dr-xr-xr-x  11 root root    0 May  3 23:48 [1m[94msys[m/[K
+drwxrwxrwt   1 root root 4096 May  4 00:21 [30m[42mtmp[m/[K
+drwxr-xr-x   1 root root 4096 Apr 29 22:02 [1m[94musr[m/[K
+drwxr-xr-x   1 root root 4096 Apr 29 22:05 [1m[94mvar[m/[K
+root@947b65ab524a:/# cd /usr/src/app[K
+root@947b65ab524a:/usr/src/app# ll[K
+total 8[K
+drwxr-xr-x 2 root root 4096 May  3 23:49 [1m[94m.[m/[K
+drwxr-xr-x 1 root root 4096 May  3 23:48 [1m[94m..[m/[K
+-rw-r--r-- 1 root root    0 May  3 23:49 index.js[K
+root@947b65ab524a:/usr/src/app# vim index.js[K
+root@947b65ab524a:/usr/src/app#[K[1C[?25hexit[?2004l
+exit
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ exit
+[?2004lexit
+
+Script done on 2024-05-04 00:23:44+08:00 [COMMAND_EXIT_CODE="0"]
