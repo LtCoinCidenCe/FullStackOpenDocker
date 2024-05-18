@@ -18,8 +18,6 @@ router.post('/', async (req, res) => {
   let rawType = await getAsync("added_todos");
   // console.log(rawType, typeof(rawType));
   let todos = Number(rawType);
-  console.log(typeof(todos),"todos",todos);
-  todos = isNaN(todos) ? 0 : todos;
   await setAsync("added_todos", todos + 1);
   res.send(todo);
 });

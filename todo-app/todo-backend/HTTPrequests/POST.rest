@@ -3,6 +3,6 @@ Host: localhost:3000
 Content-Type: application/json
 
 {
-	"text": "with redis-cli",
+	"text": "redis going persistent",
 	"done": true
 }
