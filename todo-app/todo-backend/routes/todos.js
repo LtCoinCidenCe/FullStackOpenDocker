@@ -15,14 +15,18 @@ router.post('/', async (req, res) => {
     text: req.body.text,
     done: false
   })
-  let todos = parseInt(await getAsync("added_todos"));
+  let rawType = await getAsync("added_todos");
+  // console.log(rawType, typeof(rawType));
+  let todos = Number(rawType);
+  console.log(typeof(todos),"todos",todos);
+  todos = isNaN(todos) ? 0 : todos;
   await setAsync("added_todos", todos + 1);
   res.send(todo);
 });
 
 /* statistics showing how many todos */
 router.get('/statistics', async (_, res) => {
-  const todos =  parseInt(await getAsync("added_todos"));
+  const todos = Number(await getAsync("added_todos"));
   res.send({ added_todos: todos });
 });
 
