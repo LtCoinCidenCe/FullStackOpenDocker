@@ -17,13 +17,12 @@ router.post('/', async (req, res) => {
   res.send(todo);
 });
 
-const singleRouter = express.Router();
+const singleRouter = express.Router({mergeParams: true});
 
 const findByIdMiddleware = async (req, res, next) => {
   const { id } = req.params
   req.todo = await Todo.findById(id)
   if (!req.todo) return res.sendStatus(404)
-
   next()
 }
 
@@ -35,12 +34,16 @@ singleRouter.delete('/', async (req, res) => {
 
 /* GET todo. */
 singleRouter.get('/', async (req, res) => {
-  res.sendStatus(405); // Implement this
+  const target = await Todo.findById(req.params.id);
+  res.json(target);
 });
 
 /* PUT todo. */
 singleRouter.put('/', async (req, res) => {
-  res.sendStatus(405); // Implement this
+  const body = req.body;
+  const newOb = { text: body.text, done: body.done };
+  const returnedTODO = await Todo.findByIdAndUpdate(req.params.id, newOb, { new: true});
+  res.json(returnedTODO);
 });
 
 router.use('/:id', findByIdMiddleware, singleRouter)
