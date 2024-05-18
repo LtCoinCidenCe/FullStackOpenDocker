@@ -1,0 +1,106 @@
+Script started on 2024-05-18 16:39:49+08:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED      STATUS       PORTS                     NAMES
+df7625c10bdf   mongo     "docker-entrypoint.s…"   5 days ago   Up 3 hours   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ dockerr [K[K exec -it todo- backend-mongo-1
+[?2004l"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ docker exec -it todo-backend-mongo-1 bash[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. exec -it todo-[1@b[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[Ce exec -it todo[1@-[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[C[Cx exec -it tod[1@o[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[C[C[Ce exec -it to[1@d[A]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ [C[C[C[C[C[C[C[C[C[C
+
+[?2004l[6n[m]0;C:\Program Files\Docker\Docker\resources\bin\docker.exe[?25h[?2004hroot@df7625c10bdf:/# mongosh -u root -s   p t[25l -p[K[30;36H[?25h[25l -p[K[30;35H[?25h[25l -p[K[30;34H[?25h[25l -p[K[30;33H[?25h[25lt -p[K[30;34H[?25h[25lh -p[K[30;35H[?25h[25le -p[K[30;36H[?25h[25l_ -p[K[30;37H[?25h[25lu -p[K[30;38H[?25h[25ls -p[K[30;39H[?25h[25le -p[K[30;40H[?25h[25lr -p[K[30;41H[?25h[25ln -p[K[30;42H[?25h[25la -p[K[30;43H[?25h[25lm -p[K[30;44H[?25h[25le -p[K[30;45H[?25h -p the_password            example[25l -p example[K[30;44H[?25h[25l -p example[K[30;43H[?25h[25l -p example[K[30;42H[?25h[25l -p example[K[30;41H[?25h[25l -p example[K[30;40H[?25h[25l -p example[K[30;39H[?25h[25l -p example[K[30;38H[?25h[25l -p example[K[30;37H[?25h[25l -p example[K[30;36H[?25h[25l -p example[K[30;35H[?25h[25l -p example[K[30;34H[?25h[25l -p example[K[30;33H[?25h[25lr -p example[K[30;34H[?25h[25lo -p example[K[30;35H[?25h[25lo -p example[K[30;36H[?25h[25lt -p example[K[30;37H[?25h[?2004l
+]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID: 66486ae0f70a5c5d882202d7
+[1m[92m[mConnecting to:[10X[1m[92m[10Cmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&app[m
+[1m[92mName=mongosh+2.2.5[m
+Using MongoDB:          7.0.9
+[1m[93mUsing Mongosh[m:          2.2.5[K
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.co
+m/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[K[1m[93m------[m
+   [1m[93mThe server generated these startup warnings when booting[m[K
+   2024-05-18T05:13:45.939+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'nev
+er' in this binary version
+   2024-05-18T05:13:45.939+00:00: vm.max_map_count is too low
+[1m[93m------[m[K
+
+[Ktest> show dbtest> show d[Ktest> show[K[1Cdbs
+[1m[97madmin[m         100.00 KiB
+[1m[97mconfig[m        108.00 KiB[K
+[1m[97mlocal[m          72.00 KiB[K
+[1m[97mthe_database[m   56.00 KiB[K
+test>[1Cuse the_database
+switched to db the_database
+the_database>[1Cshow collections
+[1m[97mtodos[m
+the_database>[1Cdb.todos.find()[Kthe_database> db.todos.find[44m([m)[Kthe_database> db.todos.find[44m([m{)[Kthe_database> db.todos.find[44m([m{})[Kthe_database> db.todos.find({})
+[
+  {
+    _id: ObjectId([32m'6640dcbc0fefad7ed12202d8'[m),[K
+    text: [32m'Write code'[m,[K
+    done: [33mtrue[m[K
+  },
+  {
+    _id: ObjectId([32m'6640dcbc0fefad7ed12202d9'[m),[K
+    text: [32m'Just learn'[m,[K
+    done: [33mfalse[m[K
+  }
+]
+the_database>[1Cthe_database> db.todos.find({})[Kthe_database> db.todos.find[44m([m{})[K[K[25lthe_database> db.todos.find([44m{[m})[30;30H[?25h[K[25lthe_database> db.todos.find({[44m}[m)[30;29H[?25h[K[25lthe_database> db.todos.find({}[44m)[30;28H[?25h[25l[mthe_database> db.todos.find({})[K[30;27H[?25h[K[25lthe_database> dbtodos.find({})[30;17H[?25h[K[25lthe_database> dtodos.find({})[30;16H[?25h[K[25lthe_database> todos.find({})[30;15H[?25h
+[1m[91mReferenceError[m: todos is not defined
+the_database>[K[1Cthe_database> todos.find({})[K[Kthe_database> todos.find[44m([m{})[K[25lthe_database> todos.find([44m{[m})[30;27H[?25h[25lthe_database> todos.find({[44m}[m)[K[30;26H[?25h[K[25lthe_database> todos.find({}[44m)[30;25H[?25h[25l[mthe_database> todos.find({})[K[30;24H[?25h[25lthe_database> dtodos.find({})[K[30;16H[?25h[25lthe_database> dbtodos.find({})[K[30;17H[?25h[25lthe_database> db.todos.find({})[K[30;18H[?25h
+[
+  {
+    _id: ObjectId([32m'6640dcbc0fefad7ed12202d8'[m),[K
+    text: [32m'Write code'[m,[K
+    done: [33mtrue[m[K
+  },
+  {
+    _id: ObjectId([32m'6640dcbc0fefad7ed12202d9'[m),[K
+    text: [32m'Just learn'[m,[K
+    done: [33mfalse[m[K
+  }
+]
+the_database>[1Cdb.todos.insertOne()[Kthe_database> db.todos.insertOne[44m([m)the_database> db.todos.insertOne[44m([m{)[K[Kthe_database> db.todos.insertOne[44m([m{})[K[25lthe_database> db.todos.insertOne([44m{[m})[30;35H[?25h[K[25lthe_database> db.todos.insertOne([44m{[mt})[30;36H[?25h[K[25lthe_database> db.todos.insertOne([44m{[mte})[30;37H[?25h[K[25lthe_database> db.todos.insertOne([44m{[mtex})[30;38H[?25h[K[25lthe_database> db.todos.insertOne([44m{[mtext})[30;39H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:})[30;40H[?25h[K[25lthe_database> db.todos.insertOne({[33mtext[m:[32m"})[30;41H[?25h[m[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m""[m})[30;42H[?25h[K[25lthe_database> db.todos.insertOne({[33mtext[m:[32m[44m"[49m"[m})[30;41H[?25h[K[K[25lthe_database> db.todos.insertOne({[33mtext[m:[32m[44m"[49mIncrease the number of tools in my toolbelt"[m})[K[30;84H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m})[30;85H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,})[30;86H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,d})[30;87H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[36mdo[m})[30;88H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,don})[30;89H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,done})[30;90H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,done;})[30;91H[?25h[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,done})[K[30;90H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:})[30;91H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:f})[30;92H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:fa})[30;93H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:fal})[30;94H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:fals})[30;95H[?25h[K[25lthe_database> db.todos.insertOne([44m{[33m[49mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:[33mfalse[m})[30;96H[?25h[Kthe_database> db.todos.insertOne({[33mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:[33mfalse[m})
+{
+  acknowledged: [33mtrue[m,[K
+  insertedId: ObjectId([32m'66486b7ff70a5c5d882202d8'[m)[K
+}
+the_database>[1Cthe_database> db.todos.insertOne({[33mtext[m:[32m"Increase the number of tools in my toolbelt"[m,[33mdone[m:[33mfalse[m})[Kthe_database> db.todos.find({})[K
+[
+  {
+    _id: ObjectId([32m'6640dcbc0fefad7ed12202d8'[m),[K
+    text: [32m'Write code'[m,[K
+    done: [33mtrue[m[K
+  },
+  {
+    _id: ObjectId([32m'6640dcbc0fefad7ed12202d9'[m),[K
+    text: [32m'Just learn'[m,[K
+    done: [33mfalse[m[K
+  },
+  {
+    _id: ObjectId([32m'66486b7ff70a5c5d882202d8'[m),[K
+    text: [32m'Increase the number of tools in my toolbelt'[m,[K
+    done: [33mfalse[m[K
+  }
+]
+the_database>[1Cexit
+[?2004hroot@df7625c10bdf:/# exit[?2004l
+exit
+[1m[97m
+What's next?[m
+[1m[97m[22m[36m[m  Try Docker Debug for seamless, persistent debugging tools in any container or image → [36mdocker debug todo-backend-mongo-[m
+[36m1[m
+  Learn more at https://docs.docker.com/go/debug-cli/
+[?2004h]0;ccc@DESKTOP-RRPK8M7: /mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[01;32mccc@DESKTOP-RRPK8M7[00m:[01;34m/mnt/d/Studying/COINMaster/FullStackOpen/Exercise12/containers/script-answers[00m$ exit
+[?2004lexit
+
+Script done on 2024-05-18 16:49:42+08:00 [COMMAND_EXIT_CODE="0"]
