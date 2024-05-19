@@ -8,7 +8,7 @@ const singleTodo = { text: 'testing Todo', done: false }
 test('test Todo', () => {
   render(<Todo todo={singleTodo} />)
   const element = screen.getByText(singleTodo.text);
-  const element2 = screen.getByText('Set as done');
+  const element2 = screen.getByText('Set as undone');
   expect(element).toBeDefined();
   expect(element2).toBeDefined();
 })
