@@ -5,7 +5,6 @@ services:
       - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 8080:80
-      - 3000:9900
     container_name: reverse-proxy
     depends_on:
       - app # wait for the frontend container to be started
@@ -17,6 +16,8 @@ services:
       - ./todo-frontend:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
     ports:
       - 5173:5173
+    environment:
+      VITE_BACKEND_URL: api/
     container_name: hello-front-dev # This will name the container hello-front-dev
   mongo:
     image: mongo
