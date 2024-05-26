@@ -8,6 +8,7 @@ function App() {
       <div>This works weirdly with an interactive window of containerized vite.</div>
       <div>This is the vite version of Todos.</div>
       <div>Aha good tutorial to get this working from https://patrickdesjardins.com/blog/docker-vitejs-hot-reload</div>
+      <div>OK, just follow this tutorial,everything will be fine.</div>
       <TodoView />
     </div>
   );
