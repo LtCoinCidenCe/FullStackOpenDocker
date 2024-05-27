@@ -10,4 +10,5 @@ ENV VITE_BACKEND_URL="http://localhost:3000"
 RUN npm install
 
 # npm start is the command to start the application in development mode
+# this actually runs so it takes the environmental variable from compose
 CMD ["npm", "run", "dev", "--", "--host"]
