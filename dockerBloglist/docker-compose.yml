@@ -1,0 +1,35 @@
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: bloglist
+    volumes:
+      - ./bloglist-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./data/mongo_data:/data/db
+
+  backend:
+    image: bloglist-backend-pro
+    build:
+      context: ./bloglist-backend
+      dockerfile: Dockerfile
+
+  frontend:
+    image: bloglist-frontend-pro
+    build:
+      context: ./bloglist-frontend
+      dockerfile: Dockerfile
+    # ports:
+    #   - 80:80
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 80:888
+    container_name: nginxRP
+    depends_on:
+      - frontend
+      - backend
