@@ -1,0 +1,49 @@
+services:
+  mongo:
+    image: mongo
+    # ports:
+    #   - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: bloglist
+    volumes:
+      - ./bloglist-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./data/mongo_data:/data/db
+
+  backend:
+    image: bloglist-backend-dev
+    build:
+      context: ./bloglist-backend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./bloglist-backend:/usr/src/app
+    # ports:
+    #   - 3003:3003
+    # install the dependency using docker linux first then run it
+    command: bash -c "npm install --force && npm run dev -- -L"
+
+  frontend:
+    image: bloglist-frontend-dev
+    build:
+      context: ./bloglist-frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./bloglist-frontend:/usr/src/app
+    # ports:
+    #   - 3000:3000
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    # starting the react-script is just ... exceptionally slow
+    command: bash -c "npm install && npm run start"
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 888:888
+    container_name: nginxRP
+    depends_on:
+      - frontend
+      - backend

@@ -1,0 +1,10 @@
+POST /api/blogs HTTP/1.1
+Host: localhost:3003
+content-type: application/json
+
+{
+  "title":"Artificial Intelligence",
+  "author":"George Russell",
+  "url":"https://www.google.com",
+  "likes":0
+}
