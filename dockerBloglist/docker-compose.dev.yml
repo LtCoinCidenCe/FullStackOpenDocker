@@ -18,8 +18,11 @@ services:
       dockerfile: dev.Dockerfile
     volumes:
       - ./bloglist-backend:/usr/src/app
-    # ports:
-    #   - 3003:3003
+    # I think for development it is still better just to expose the port
+    # because the database is empty at the beginning
+    # users cannot simply be inserted in script due to hash
+    ports:
+      - 3003:3003
     # install the dependency using docker linux first then run it
     command: bash -c "npm install --force && npm run dev -- -L"
 
